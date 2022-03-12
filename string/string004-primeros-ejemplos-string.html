@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>STRING - 004: Primeros ejemplos String</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1 class="titulo-pagina">STRING - 004: Primeros ejemplos String</h1>
+        </article>
+    </main>
+    <script>
+        /* Crear cadenas con const o let */
+        const string1 = 'Cadena de texto';
+        let string2 = "4 + 3";
+        const string3 = new String('Cadena declarad con el constructor String()');
+        let string4 = new String("3 + 4");
+
+        /* Mostrar cadenas */
+        console.log('String1: ' + string1);
+        console.log('String2: ' + string2);
+        console.log('String3: ' + string3);
+        console.log('String4: ' + string4);
+
+        /* mostra el tipo de dato de la variable */
+        console.log("Tipo string1: " + typeof string1); // string
+        console.log("Tipo string2: " + typeof string2); // string
+        console.log("Tipo string3: " + typeof string3); // object
+        console.log("Tipo string4: " + typeof string4); // object
+
+        /* calcular eval() */
+        console.log(eval(string2)); // Resultado: 7 (la suma)
+        console.log(eval(string4)); // Resultado: el contenido del objeto
+    </script>
+</body>
+
+</html>
