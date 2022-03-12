@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>STRING - 001: Crear Strings</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1 class="titulo-pagina">STRING - 001: CREAR STRINGS</h1>
+        </article>
+    </main>
+    <script>
+        /* Crear cadenas como primitivas con const o let */
+        const string1 = 'Esta es mi primera cadena de texto declarada con const y comillas simples';
+        const string2 = "Segunda caddena con const y con comillas dobles";
+        let string3 = `Tercera cadena. Esta vez declarada con let y con comillas invertidas`;
+
+        /* Crear cadenas como objetos usando el contructor String(); */
+        const string4 = new String('Cuarta cadena creada usando el contructor String()');
+        let string5 = new String(`Quinta cadena creada con let y usando el contructor String()`);
+        /* Mostrar cadenas primitivas */
+        console.log('String1: ' + string1);
+        console.log('String2: ' + string2);
+        console.log(`String3: ` + string3);
+
+        /* Mostrar cadenas objetos */
+        console.log('String4: ' + string4);
+        console.log(`String5: ${string5}`);
+    </script>
+</body>
+
+</html>
