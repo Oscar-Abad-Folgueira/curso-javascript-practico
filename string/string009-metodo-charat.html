@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>STRING - 009: Método charAt()</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1 class="titulo-pagina">STRING - 009: MÉTODO charAt()</h1>
+            <p>El método <code>charAt()</code> el carácter que está en la posición que le indiquemos</p>
+            <p>Sintáxis: <code>chartAt(index);</code></p>
+        </article>
+    </main>
+    <script>
+        /* Crear cadenas como primitivas con const o let */
+        const string1 = "Una cadena de ejemplo";
+
+        /* Crear variable para guardar el índice */
+        let indice = 7;
+
+        /* Mostrar varios caracteres utilizando charAt(); */
+        console.log(`El carácter número ${indice-1} es ${string1.charAt(indice-1)}` );
+
+        /* Mostrar el último caracter de la cadena */
+        console.log(`El último caracter del string es: ${string1.charAt(string1.length - 1)}.`);
+
+        /* Mostrar el primer caracter de la cadena */
+        console.log(`El primer caracter del sting es: ${string1.charAt(0)}`);
+
+        /* Mostrar todos los caracteres de un string, uno a uno, recorriendo como un array con for...in*/
+        for (let caracter in string1){
+            console.log(string1[caracter]);
+        }
+
+        /* Mostrar todos los caracteres de un string, uno a uno, recorriendo como un array con for...of*/
+        for (let caracter of string1){
+            console.log(caracter);
+        }
+    </script>    
+</body>
+</html>
