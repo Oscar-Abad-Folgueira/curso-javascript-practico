@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>STRING - 011: Método concat()</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1 class="titulo-pagina">STRING - 011: MÉTODO concat()</h1>
+            <p>El método <code>concat()</code> concatena los argumentos tipo string al string que lo llama y devuelve un nuevo string.</p>
+            <p>Sintáxis: <code>concat(str1);   concat(str1, str2);   concat(str1, str2, ...., strN);</code></p>
+        </article>
+    </main>
+    <script>
+        /* Crear cadenas como primitivas con const o let */
+        const string1 = "Me llamo";
+        const string2 = "Óscar";
+        const string3 = "Abad";
+        const string4 = "Folgueira";
+
+        /* Mostrar con ejemplos de variables */
+        console.log(string1.concat(string2));  // Salida: Me llamoÓscar
+        console.log(string1.concat(' ', string2));  // Salida: Me llamo Óscar
+        console.log(string1.concat(' ', string2, ' ', string3));  // Salida: Me llamo Óscar Abad
+        console.log(string1.concat(' ', string2, ' ', string3, ' ', string4));  // Salida: Me llamo Óscar Abad
+
+        /* Ejemplo con cadena literal */
+        console.log('Hola, '.concat(string1, ' ', string2, ' y me gusta JavaScript.'));
+
+        /* Ejemplo con array */
+        let nombre = ['Óscar ', 'Abad ', 'Folgueira'];
+
+        console.log('Hola, me llamo '.concat(...nombre));  // salida: Hola, me llamo Óscar Abad Folgueira
+
+    </script>    
+</body>
+</html>
