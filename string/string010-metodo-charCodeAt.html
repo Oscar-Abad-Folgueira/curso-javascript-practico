@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>STRING - 010: Método charCodeAt()</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1 class="titulo-pagina">STRING - 010: MÉTODO charCodeAt()</h1>
+            <p>El método <code>charCodeAt()</code> devuelve el código UTF-16 del caracter dado.</p>
+            <p>Sintáxis: <code>chartCodeAt(index);</code></p>
+        </article>
+    </main>
+    <script>
+        /* Crear cadenas como primitivas con const o let */
+        const string1 = "Una cadena de ejemplo";
+
+        /* Crear variable para guardar el índice */
+        let indice = 15;
+
+        /* Mostrar varios caracteres utilizando charCodeAt(); */
+        console.log(`El código del caracter ${string1.charAt(indice)} es: ${string1.charCodeAt(indice)}.`);
+
+        /* Mostar la lista de todos los caracteres del string y su código UTF-16 con for...in */
+        for(let caracter in string1){
+            // caracter es el índice. 0, 1, 2...
+            console.log(`Caracter: ${string1.charAt(caracter)} ==>  Código UFT-16: ${string1.charCodeAt(caracter)}.`);
+        }
+        
+        /* Mostrar el código de un caracter de un literal */
+        console.log(`Carácter: ${'HOLA'.charAt(3)} => Código: ${'HOLA'.charCodeAt(3)}`);
+
+    </script>    
+</body>
+</html>
