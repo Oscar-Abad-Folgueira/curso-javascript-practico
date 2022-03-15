@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>STRING - 012: Método endsWith()</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1 class="titulo-pagina">STRING - 012: MÉTODO endsWith()</h1>
+            <p>El método <code>endsWith()</code> determina si una cadena de texto termina con los caracteres de una cadena dada. Devuelve true o false. Distingue entre mayúsculas y minúsculas.</p>
+            <p>Sintáxis: <code>str.endsWith(serachString[, position])</code></p>
+            <p>Distingue entre mayúsculas y minúsculas.</p>
+            <p>Devuelve <code>true</code> o <code>false</code></p>
+            <p>Añadido a ECMASscript 6</p>
+        </article>
+    </main>
+    <script>
+        /* Crear cadenas como primitivas con const o let */
+        const string1 = "Cadena de texto para el ejercicio";
+
+        /* Comrobar si la cadena termina en unos caracteres */
+        console.log(`¿La cadena termina en 'para'? ` + string1.endsWith('para'));
+        console.log(`¿La cadena termina en 'cio'? ` + string1.endsWith('cio'));
+    </script>    
+</body>
+</html>
